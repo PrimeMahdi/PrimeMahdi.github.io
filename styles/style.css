@@ -334,4 +334,10 @@ div.copyRight {
         margin-top: -1px;
         box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
+    p.welcome {
+	margin-top : 10px;
+    }
+    div.rsv div p {
+	margin-top : 10px;
+    }
 }
