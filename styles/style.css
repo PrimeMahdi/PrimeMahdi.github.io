@@ -16,11 +16,12 @@
     --color2 : rgb(93,53,135);
     --color3 : rgb(163,103,177);
     --color4 : rgb(255,209,227);
+    --discordBlue : rgb(89, 102, 243);
 }
 body {
     background-color: var(--bg);
 }
-/* start TOP PART (image bg) */
+/* start HEADER (image bg) */
 header {
     overflow: hidden;
     height: 600px;
@@ -41,7 +42,7 @@ header {
     transition: all 0.2s;
 }
 .background {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
 }
 .navUl {
     display: flex;
@@ -162,13 +163,138 @@ img.logo {
 	50% { transform: translate(0, 15px); }
 	100% { transform: translate(0, -0px); } 
 }
+
+/* end of HEADER (image bg) */
+/* start SECTION*/
+section {
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+div.welcome {
+    text-align: center;
+    padding: 50px;
+}
+p.welcome {
+    word-spacing: 2px;
+}
+div.rsv {
+    width: 100%;
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.rsv div {
+    background-color: var(--bg);
+    border-radius: 8px;
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid rgb(61, 61, 61);
+    cursor: pointer;
+    transition: all 0.3s;
+    max-width: 300px;
+}
+div.rsv div:hover {
+    margin-top: -15px;
+    box-shadow: 0px 10px 10px rgb(0,0,0);
+}
+div.rsv div h3 {
+    text-align: center;
+}
+div.rsv div p {
+    text-align: justify;
+}
+/* end SECTION */
+/* start DIV>DISCORD */
+div.discord {
+    background-color: var(--discordBlue);
+    height: 700px;
+    color: #fff;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+div.discord h3 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+div.discord p {
+    margin-top: 10px;
+}
+div.discordShot {
+    height: 400px;
+    margin: 20px;
+    width: 80%;
+    z-index: 4;
+    background : linear-gradient(to top , rgba(89, 102, 243,4) , rgba(89, 102, 243,0.3));
+}
+div.discordShot img {
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+button.dislaunch {
+    padding: 10px 50px;
+    background-color: var(--color3);
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px var(--color3);
+    transition: all 0.2s;
+    margin-top: 20px;
+}
+button.dislaunch:hover {
+    box-shadow: 0px 7px 25px var(--color4);
+}
+/* end DIV>DISCORD */
+/* start FOOTER */
+footer {
+    height: max-content;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+div.ssl {
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.ssl div h6 {
+    color: #ddd;
+    font-size: 17px;
+}
+div.ssl div a {
+    text-decoration: none;
+    color: var(--color2);
+    display: block;
+    margin-top: 3px;
+}
+div.copyRight {
+    color: #ddd;
+    margin: 20px 40px;
+    text-align: justify;
+}
+/* end FOOTER */
+/* start responsiving */
 @media only screen and (max-width : 450px) {
     button.launch {
         padding: 10px 12px;
     }
     li.navLi {
         font-size: 20px;
-        margin: 25px 0px;
+        margin: 10px 0px;
     }
     li.navLi::before {
         transform: scaleX(1);
@@ -177,5 +303,35 @@ img.logo {
     }
     ul.navUl {
         margin-top: 10px;
+    }
+    section {
+        height: 600px;
+    }
+    div.rsv {
+        flex-direction: column;
+        height: max-content;
+    }
+    div.rsv div{
+        width: 80%;
+        margin-top: 20px;
+    }
+    div.discord h3{
+        font-size: 25px;
+    }
+    div.discord p {
+        font-size: 13px;
+    }
+    div.ssl {
+        margin-top: 20px;
+    }
+    div.copyRight {
+        margin: 20px 10px;
+    }
+    .menu {
+        height: 70px;
+    }
+    div.rsv div:hover {
+        margin-top: -1px;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
     }
 }
