@@ -91,7 +91,7 @@ header {
 
 nav {
     height: 50px;
-    overflow: hidden;
+    overflow: visible;
     background-color: var(--light-yellow);
     position: relative;
     display: flex;
@@ -100,19 +100,25 @@ nav {
 .nav-items {
     position: absolute;
     right: 0;
+    height: 100%;
     margin-right: 38px;
 }
 .nav-items-list {
     direction: rtl;
+    height: 100%;
     list-style-type: none;
+    display: flex;
+    align-items: center;
 }
 .nav-items-list li {
-    display: inline-block;  
-    margin-right: 9px;
+    margin-right: 12px;
     font-weight: 600;
     font-size: 16px;
     position: relative;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .nav-items-list li::before {
     content: " ";
@@ -125,6 +131,32 @@ nav {
 }
 .nav-items-list li:hover::before {
     transform: scaleX(1) translateY(22px);
+}
+.categories-list {
+    transition: all 0.5s;
+    position: absolute;
+    top: 50px;
+    list-style-type: none;
+    right: 38px;
+    overflow: hidden;
+    transform: translateY(-200px);
+    cursor: pointer;
+    z-index: -2;
+}
+.categories-list li {
+    transition: all 1s;
+    pointer-events: none;
+    height: 35px;
+    width: 100px;
+    background-color: var(--light-yellow);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    padding-right: 10px;
+    align-items: center;
+}
+.categories-li:hover + .categories-list li{
+    transform: translateY(0px);
 }
 .search-box {
     border-radius: 15px;
