@@ -20,4 +20,4 @@ categoriesList.addEventListener("mouseenter",()=>{
 categoriesList.addEventListener("mouseleave",()=>{
     console.log("leaved");
     categoriesList.style.transform = "translateY(-200px)";
-});
+}); 
