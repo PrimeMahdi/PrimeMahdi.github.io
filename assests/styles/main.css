@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 :root {
     --background : #ffffff;
@@ -237,13 +238,12 @@ button.search img {
 /* End of slideshow | start best seller products part */
 
 .best-seller-box {
-    position: absolute;
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-bottom: 100px;
     margin-top: -10px;
 }
 .best-seller-title {
@@ -362,4 +362,137 @@ p.product-price {
 .add-to-cart img {
     width: 80%;
     height: 80%;
+}
+/* end of Best seller | start footer */
+footer {
+    position: absolute;
+    width: 100vw;
+    height: 400px;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    direction: rtl;
+}
+.footer-column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.footer-title {
+    font-size: 20px;
+    margin-top: 65px;
+    position: relative;
+    text-align: right;
+    margin-right: -130px;
+    font-weight: 600;
+    color: var(--normal-yellow);
+}
+.footer-title::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--red);
+    transform: translateY(40px);
+}
+
+/* footer 1st column */
+
+.footer-info {
+    color: #fff;
+    word-spacing: 1px;
+    padding: 0 60px 0 50px;
+    text-align: justify;
+    margin-top: 30px;
+    font-weight: 600;
+    direction: rtl;
+}
+.social-media-box {
+    width: 70%;
+    margin-right: 10px;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.social-media-box a {
+    flex : 1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #535353;
+    transition: all 0.4s;
+    aspect-ratio: 1 !important;
+    border-radius: 100%;
+}
+i {
+    font-family: "Font Awesome 6 Brands";
+    color: var(--black);
+    font-style: normal;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+.social-media-box a:hover {
+    transform: translateY(-5px);
+}
+.instagram:hover {
+    color: #9d1ca8;
+}
+.twitter:hover {
+    color: #1DA1F2;
+}
+.facebook:hover {
+    color: #1877F2;
+}
+.telegram:hover {
+    color: #0088cc;
+}
+
+/* Footer 2nd column */
+
+.fast-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: -180px;
+    margin-top: 15px;
+}
+.fast-links a i {
+    color: var(--red);
+    font-size: 20px;
+    
+}
+.fast-link {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.fast-link:hover {
+    color: var(--normal-yellow);
+}
+/* Footer 3rd column */
+.contact-info i {
+    color: var(--red);
+    font-size: 18px;
+}
+.contact-info {
+    width: 65%;
+    transform: translateY(10px);
+    margin-top: 14px;
+}
+.contact-info span {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 5px;
+}
+/* fifth column  */
+.updating  {
+    color: #fff;
+    margin-top: 30px;
+    margin-right: -55px;
+    font-weight: 600;
 }
