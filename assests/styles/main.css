@@ -5,6 +5,9 @@
     user-select: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    width: 100vw;
+}
 :root {
     --background : #ffffff;
     --light-yellow : #fff4d1;
@@ -250,7 +253,7 @@ button.search img {
     color: #333333;
 }
 .best-seller-products {
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     margin-top: 0px;
     position: relative;
@@ -258,7 +261,8 @@ button.search img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 30px;
+    padding: 30px 0 50px 0;
+    gap: 20px;
 }
 .product {
     cursor: pointer;
@@ -272,13 +276,14 @@ button.search img {
     filter: drop-shadow(rgba(0, 0, 0, 0.281) 0px 2px 5px);
     background-color: #fff;
     transition: all 0.3s;
+    object-fit: fill;
 }
 .product:hover {
     transform: translateY(-10px);
 }
 .product-thumbnail {
     height: 70%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .product-content {
     background-color: #ffffff;
@@ -385,15 +390,15 @@ footer {
     font-size: 20px;
     margin-top: 65px;
     position: relative;
-    text-align: right;
-    margin-right: -130px;
+    text-align: center;
     font-weight: 600;
     color: var(--normal-yellow);
 }
 .footer-title::before {
     content: "";
     position: absolute;
-    width: 50px;
+    width: 80%;
+    margin-right: 10%;
     height: 2px;
     background-color: var(--red);
     transform: translateY(40px);
@@ -404,8 +409,8 @@ footer {
 .footer-info {
     color: #fff;
     word-spacing: 1px;
-    padding: 0 60px 0 50px;
-    text-align: justify;
+    padding: 0 18%;
+    text-align: center;
     margin-top: 30px;
     font-weight: 600;
     direction: rtl;
@@ -415,18 +420,23 @@ footer {
     margin-right: 10px;
     margin-top: 30px;
     display: flex;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 .social-media-box a {
-    flex : 1;
+    width: 30px;
+    height: 30px;
     text-decoration: none;
     display: flex;
+    font-size: 2px;
     align-items: center;
     justify-content: center;
     background-color: #535353;
     transition: all 0.4s;
     aspect-ratio: 1 !important;
     border-radius: 100%;
+}
+.social-media-box a i {
+    font-size: 25px;
 }
 i {
     font-family: "Font Awesome 6 Brands";
@@ -456,7 +466,6 @@ i {
 .fast-links {
     display: flex;
     flex-direction: column;
-    margin-right: -180px;
     margin-top: 15px;
 }
 .fast-links a i {
@@ -493,6 +502,67 @@ i {
 .updating  {
     color: #fff;
     margin-top: 30px;
-    margin-right: -55px;
     font-weight: 600;
+}
+/* End footer |  fixingOverFLow */
+html {
+    overflow-x: hidden;
+}
+/* start responsiving */ 
+@media (max-width:858px) and (min-width:732px){
+    .social-media-box {
+        margin-top: 10px;
+    }
+    .footer-info{
+        padding: 0;
+        padding-right: 25px;
+    }
+}
+@media only screen and (max-width:732px){
+    /* navbar */
+    .nav-items-list {
+        width: 0;
+        overflow: hidden;
+    }
+    .search-box {
+        width: 80%;
+        margin: 0;
+    }
+    nav {
+        justify-content: center;
+    }
+    /* footer responsiving */
+    footer {
+        flex-direction: column;
+        height: 600px;
+    }
+    .footer-title {
+        margin-top : 10px;
+    }
+    .footer-column {
+        padding-right :40px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    div.footer-column:nth-child(1){
+        transform: translateY(40px);
+    }
+    .social-media-box {
+        width: 0;
+        overflow: hidden;
+    }
+    .footer-info {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        padding-left: 40px;
+        text-align: right;
+    }
+    .fast-links {
+        flex-direction: row;
+        width: 100%;
+    }
+    .fast-link {
+        margin-right: 4%;
+    }
 }
