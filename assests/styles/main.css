@@ -58,11 +58,15 @@ header {
     height: 75px;
     aspect-ratio: 1;
     position: absolute;
-    transition: all 0.4s ;
+    transition: all 0.2s ;
+}
+.logo2.clicked {
+    transform: scale(1.1);
+    filter: drop-shadow(var(--heart) 0px 0px 20px);
 }
 .logo2:hover {
     transform: scale(1.01);
-    filter: drop-shadow(var(--heart) 0px 0px 8px);
+    filter: drop-shadow(var(--heart) 0px 0px 20px);
 }
 .logo3 {
     pointer-events: none;
@@ -522,6 +526,7 @@ html {
     /* navbar */
     .nav-items-list {
         width: 0;
+        height: 0;
         overflow: hidden;
     }
     .search-box {
@@ -564,5 +569,23 @@ html {
     }
     .fast-link {
         margin-right: 4%;
+    }
+}
+@media only screen and (max-width:579px){
+    .product {
+        width: 150px;
+        aspect-ratio: 0.6;
+    }
+    .product img {
+        height: 60%;
+    }
+    .product-content {
+        height: 40%;
+    }
+    .product-buttons-box {
+        height: 33%;
+    }
+    .observe-product {
+        font-size: 15px;
     }
 }
