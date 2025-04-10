@@ -232,9 +232,15 @@ button.search img {
     border-radius: 15px;
     overflow: hidden;
     cursor: pointer;
+    filter: grayscale(20%);
 }
 .slide:hover {
     flex: 5;
+    filter: grayscale(0);
+}
+.flex5 {
+    flex: 5;
+    filter: grayscale(0);
 }
 .slide img {
     height: 100%;
