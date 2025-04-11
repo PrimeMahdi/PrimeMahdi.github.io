@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شاپینو</title>
+    <title>شاپینو | محصولات</title>
     <link rel="stylesheet" href="/assests/styles/main.css">
+    <link rel="stylesheet" href="../styles/products.css">
     <link rel="shortcut icon" href="/assests/images/logo-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body>    
+    <!-- HEADER START -->
 
-<!-- Header start -->
-    
     <header>
         <div class="header-box">
             <div class="title-and-logo">
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-<!-- Header end | Nav bar start -->
+    <!-- HEADER END | NAV BAR START -->
 
     <nav>
         <div class="nav-items">
@@ -52,81 +52,27 @@
             </button>
             <input type="text" class="search-input" placeholder="جستجو کنید . . . ">
         </div>
-        <!-- <ul class="categories-list">
-            <li>دسته 1</li>
-            <li>دسته 2</li>
-            <li>دسته 3</li>
-            <li>دسته 4</li>
-            <li>دسته 5</li>
-        </ul> -->
     </nav>
 
-<!-- Nav bar end | Slideshow start -->
+    <!-- NAV BAR END | MAIN(PRODUCTS) START -->
 
-    <div class="slide-show-box">
-        <div class="slides-container">
-            <div class="slide"><img src="/assests/images/slides/slide1.png"></div>
-            <div class="slide"><img src="/assests/images/slides/slide2.png"></div>
-            <div class="slide"><img src="/assests/images/slides/slide3.png"></div>
-            <div class="slide"><img src="/assests/images/slides/slide4.png"></div>
-            <div class="slide"><img src="/assests/images/slides/slide5.png"></div>
-            <div class="slide"><img src="/assests/images/slides/slide6.png"></div>
+    <div class="main">
+        <p class="search-results-for">نمایش نتایج جستجو برای <span class="search-results-for"> ساعت زشت</span></p>
+        <div class="products-box">
+            <div class="products-section">
+                <!-- insert products here -->
+            </div>
+        </div>
+        <div class="page-control-box">
+            <button class="first-page"><i class="fas fa-angle-double-left"></i></button>
+            <button class="previous-page"><i class="fas fa-angle-left"></i></button>
+            <div class="current-page">1</div>
+            <button class="next-page"><i class="fas fa-angle-right"></i></button>
+            <button class="next-page"><i class="fas fa-angle-double-right"></i></button>
         </div>
     </div>
 
-<!-- Slideshow end | best seller products start -->
-
-    <div class="best-seller-box">
-        <h3 class="best-seller-title">پرفروش ترین های این ماه</h3>
-        <div class="best-seller-products">
-            <div class="product">
-                <img src="/assests/images/product-thumbnails/item1.png" class="product-thumbnail">
-                <div class="product-content">
-                    <h6 class="product-title">کالا 1</h6>
-                    <p class="product-price">قیمت : <span class="product-price-span">4,000,000</span></p>
-                    <div class="product-buttons-box">
-                        <button class="add-to-cart"><img src="/assests/images/shopping.png" class="cart"></button>
-                        <button class="observe-product">مشاهده محصول</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/assests/images/product-thumbnails/item2.png" class="product-thumbnail">
-                <div class="product-content">
-                    <h6 class="product-title">کالا 2</h6>
-                    <p class="product-price">قیمت : <span class="product-price-span">4,000,000</span></p>
-                    <div class="product-buttons-box">
-                        <button class="add-to-cart"><img src="/assests/images/shopping.png" class="cart"></button>
-                        <button class="observe-product">مشاهده محصول</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/assests/images/product-thumbnails/item3.png" class="product-thumbnail">
-                <div class="product-content">
-                    <h6 class="product-title">کالا 3</h6>
-                    <p class="product-price">قیمت : <span class="product-price-span">4,000,000</span></p>
-                    <div class="product-buttons-box">
-                        <button class="add-to-cart"><img src="/assests/images/shopping.png" class="cart"></button>
-                        <button class="observe-product">مشاهده محصول</button>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="/assests/images/product-thumbnails/item4.png" class="product-thumbnail">
-                <div class="product-content">
-                    <h6 class="product-title">کالا 4</h6>
-                    <p class="product-price">قیمت : <span class="product-price-span">4,000,000</span></p>
-                    <div class="product-buttons-box">
-                        <button class="add-to-cart"><img src="/assests/images/shopping.png" class="cart"></button>
-                        <button class="observe-product">مشاهده محصول</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Best seller products end | footer start -->
+    <!-- MAIN(PRODUCTS) END | FOOTER START-->
 
     <footer>
         <div class="footer-column">
@@ -161,6 +107,5 @@
             <p class="updating">این بخش درحال بروز رسانی میباشد</p>
         </div>
     </footer>
-    <script src="/assests/scripts/app.js"></script>
 </body>
 </html>
