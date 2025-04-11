@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شاپینو | محصولات</title>
-    <link rel="stylesheet" href="/assests/styles/main.css">
-    <link rel="stylesheet" href="../styles/products.css">
-    <link rel="shortcut icon" href="/assests/images/logo-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/productDetails.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../images/logo-icon.png" type="image/x-icon">
 </head>
-<body>    
-    <!-- HEADER START -->
+<body>
 
+    <!-- HEADER START -->
+    
     <header>
         <div class="header-box">
             <div class="title-and-logo">
@@ -20,7 +21,7 @@
                     <img src="/assests/images/hands-icon.png" style="z-index: 3;" class="header-logo logo3">
                     <img class="header-logo logo1" style="z-index: 1;" src="/assests/images/logo-icon.png">
                 </div>
-                <h1 class="header-t itle">شاپینو</h1>
+                <h1 class="header-title">شاپینو</h1>
             </div>
             <div class="header-items">
                 <a href="">
@@ -36,7 +37,7 @@
         </div>
     </header>
 
-    <!-- HEADER END | NAV BAR START -->
+<!-- HEADER END | NAV BAR START -->
 
     <nav>
         <div class="nav-items">
@@ -54,25 +55,34 @@
         </div>
     </nav>
 
-    <!-- NAV BAR END | MAIN(PRODUCTS) START -->
-
-    <div class="main">
-        <p class="search-results-for">نمایش نتایج جستجو برای <span class="search-results-for"> ساعت زشت</span></p>
-        <div class="products-box">
-            <div class="products-section">
-                <!-- insert products here -->
+<!-- NAV END | MAIN START -->
+    <main>
+        <div class="product-directory">
+            <p><span class="home-span">خانه</span> / <span class="products-span">محصولات</span> / <span>نام محصول</span></p>
+        </div>
+        <div class="product-details-box">
+            <div class="product-details-thumbnail"> <img src="../images/product-thumbnails/item1.png"> </div>
+            <div class="product-details">
+                <h1 class="product-name">نام محصول</h1>
+                <div class="product-meta">
+                    <div class="rating"> رضایت <span>25</span>%</div>
+                    <div class="comment-count">(<span>11</span>نظر)</div>
+                </div>
+                <div class="product-details-price"><span>250,000</span>تومان</div>
+                <div class="product-description"><p>این یک محصول نمونه از فروشگاه شاپینو است که با بهترین کیفیت و مواد اولیه تولید شده است. این محصول مناسب برای استفاده روزمره بوده و دارای گارانتی 18 ماهه می‌باشد. </p></div>
+                <div class="number-box">
+                    <p>تعداد : </p>
+                    <div class="number-managing">
+                        <button class="plus"><span>+</span></button>
+                        <input type="number" class="product-number">
+                        <button class="minus"><span>-</span></button>
+                    </div>
+                </div>
+                <button class="add-product-to-cart">افزودن به سبد خرید</button>
             </div>
         </div>
-        <div class="page-control-box">
-            <button class="first-page"><i class="fas fa-angle-double-left"></i></button>
-            <button class="previous-page"><i class="fas fa-angle-left"></i></button>
-            <div class="current-page">1</div>
-            <button class="next-page"><i class="fas fa-angle-right"></i></button>
-            <button class="next-page"><i class="fas fa-angle-double-right"></i></button>
-        </div>
-    </div>
-
-    <!-- MAIN(PRODUCTS) END | FOOTER START-->
+    </main>
+<!-- MAIN END | FOOTER START -->
 
     <footer>
         <div class="footer-column">
@@ -107,5 +117,6 @@
             <p class="updating">این بخش درحال بروز رسانی میباشد</p>
         </div>
     </footer>
+    <script src="../scripts/numChanger.js"></script>
 </body>
 </html>
