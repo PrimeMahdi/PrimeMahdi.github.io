@@ -308,7 +308,7 @@ input.product-number {
 @media only screen and (max-width : 600px){
     .product-details-box {
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
     }
     .product-details-thumbnail{
         width: 100%;
@@ -322,7 +322,7 @@ input.product-number {
         top: 50%;
     }
     .product-name , .product-meta , .product-description ,.product-details-price , .number-box , .add-product-to-cart{
-        margin-top: 5px;
+        margin-top: 20px;
     }
     .your-comment input{
         width: 200px;
