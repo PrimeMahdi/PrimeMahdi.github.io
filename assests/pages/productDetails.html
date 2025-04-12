@@ -81,6 +81,30 @@
                 <button class="add-product-to-cart">افزودن به سبد خرید</button>
             </div>
         </div>
+        <div class="product-tabs">
+            <div class="product-tabs-header">
+                <button>توضیحات محصول</button>
+                <button>مشخصات فنی</button>
+                <button>نظرات کاربران</button>
+            </div>
+            <div class="product-tabs-content">
+                <div class="tabs-description"><h3>توضیحات محصول</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti mollitia adipisci harum, consequatur ratione animi quia rem, facere maiores voluptates magni labore nihil ipsam blanditiis iste officia! Sequi, quibusdam!</p></div>
+                <div class="tabs-specs"><h3>مشخصات فنی</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laborum quo eos impedit fugiat quasi, reprehenderit in suscipit modi sequi itaque at facilis est cupiditate saepe temporibus, assumenda eius inventore.</p></div>
+                <div class="tabs-comments">
+                    <h3>نظرات کاربران</h3>
+                    <div class="your-comment">
+                        <form action="comment">
+                            <input placeholder="نظر خود را به اشتراک بگذارید" required type="text" class="your-comment-input">
+                            <button type="submit" class="send-your-comment"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                    <div class="comment">
+                        <h6 class="username">غلامعلی</h6>
+                        <p class="message">سلام شاهکار و معرکست</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 <!-- MAIN END | FOOTER START -->
 
@@ -118,5 +142,6 @@
         </div>
     </footer>
     <script src="../scripts/numChanger.js"></script>
+    <script src="../scripts/tabActivator.js"></script>
 </body>
 </html>
