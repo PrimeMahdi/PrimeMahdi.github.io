@@ -34,9 +34,12 @@ main {
     position: absolute;
     width: 50%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .product-details-thumbnail img {
-    object-fit: fill;
+    object-fit: cover;
     
 }
 .product-details {
@@ -47,6 +50,7 @@ main {
     position: absolute;
     width: 50%;
     left: 0;
+    height: 100%;
     direction: rtl; 
 }
 .product-name {
@@ -225,9 +229,10 @@ input.product-number {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    width: 100%;
 }
 .your-comment input {
-    width: 1000px;
+    width: 600px;
     border-radius: 10px;
     border: 1px solid var(--gray);
     outline: unset;
@@ -237,10 +242,11 @@ input.product-number {
     color: var(--black);
 }
 .your-comment button {
-    width: 40px;
+    width: 40px !important;
     cursor: pointer;
     border-radius: 50%;
     border: none;
+    height: 40px !important;
     background-color: var(--red);
     color: #fff;
     transition: all 0.2s;
@@ -270,4 +276,15 @@ input.product-number {
 }
 .comment p {
     font-size: 20px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width : 860px){
+    .your-comment input {
+        width: 400px;
+    }
+    .add-product-to-cart {
+        width: 60%;
+        height: 40px;
+        margin: 20px 20%;
+    }
 }
