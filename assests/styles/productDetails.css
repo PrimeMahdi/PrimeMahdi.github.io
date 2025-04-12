@@ -222,7 +222,8 @@ input.product-number {
     flex-direction: column;
     gap: 10px;
     overflow-y: scroll;
-    scrollbar-width: 0;
+    overflow-x: hidden;
+    /* scrollbar-width: 0; */
 }
 .your-comment , .your-comment form{
     height: 40px;
@@ -320,7 +321,7 @@ input.product-number {
     .product-details {
         top: 50%;
     }
-    .product-name , .product-details-price , .number-box , .add-product-to-cart{
+    .product-name , .product-meta , .product-description ,.product-details-price , .number-box , .add-product-to-cart{
         margin-top: 5px;
     }
     .your-comment input{
